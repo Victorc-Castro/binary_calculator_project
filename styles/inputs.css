@@ -1,0 +1,72 @@
+input, select {
+  background-color: var(--input-base);
+  appearance: none;
+  width: 100%;
+  border: 1px solid var(--input-placeholder);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+  font: var(--body-md);
+  color: var(--text-heading);
+}
+
+select {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+::placeholder {
+  color: var(--input-placeholder);
+}
+
+button#btnResult {
+  width: 26.875rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--label-medium);
+  background-color: var(--background-tertiary);
+  color: #ffffff;
+  text-transform: uppercase;
+  border: var(--background-secondary);
+}
+
+@media (width >= 80em) {
+  .border-btn {
+    position: relative;
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  #btnResult {
+    position: relative;
+    z-index: 2;
+  }
+
+  .border-btn::after {
+    content: "";
+    position: absolute;
+    top: 2.375rem;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 3.75rem;
+    background: var(--text-heading);
+    border-radius: 8px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .border-btn:hover::after {
+    opacity: 1;
+  } 
+}

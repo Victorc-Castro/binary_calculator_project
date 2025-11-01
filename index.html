@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image.svg" href="./assets/icons/Logo.svg">
+
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link rel="icon" href="./assets/page-icon.svg">
+
+  <title>Calculadora Binária</title>
+</head>
+<body>
+  <div class="main">
+    <h1>Calculadora Binária</h1>
+
+    <div id="result" class="hidden">
+      <!-- <h2>Resultado do Cálculo</h2> -->
+      <!-- <div></div> -->
+    </div>
+
+    <label for="operations" id="label-op">Operação</label>
+    <select id="operations">
+      <option value="+">Adição (+):</option>
+      <option value="-">Subtração (-):</option>
+      <option value="*">Multiplicação (x):</option>
+      <option value="/">Divisão (/):</option>
+    </select>
+
+    <div class="inputs">
+      <label for="binario1">Valor 1:</label>
+      <input 
+          type="text" 
+          id="value-1"
+          name="binario1" 
+          pattern="[01]*"
+          placeholder="Ex: 10101..." 
+          required>
+      <label for="binario2">Valor 2:</label>
+        <input 
+          type="text" 
+          id="value-2"
+          name="binario2" 
+          pattern="[01]*"
+          placeholder="Ex: 10101..." 
+          required>
+    </div>
+
+    <div class="border-btn">
+      <button type="submit" id="btnResult"> Calcular </button>
+    </div>
+ 
+   
+  </div>
+
+  <div id="icons">
+    <ul>
+      <li>
+        <a href="https://github.com/Victorc-Castro" target="_blank">
+          <img src="./assets/github-icon.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/victor-cau%C3%A3-andrade-castro-207994277/" target="_blank">
+        <img src="./assets/linkedin-icon.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

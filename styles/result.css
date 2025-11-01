@@ -1,0 +1,18 @@
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 0.75rem;
+
+  & h2 {
+    font: var(--body-md);
+    font-size: 2rem;
+  }
+
+  & div {
+    font: var(--body-md);
+    font-size: 2rem;
+  }
+}

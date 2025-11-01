@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--input-base);
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+}
+
+:root {
+  /* Fonts */
+  --font-family-open: "Open Sans", sans-serif;
+  --body-md: 400 1rem/1.5 var(--font-family-open);
+  --body-title: 400 3rem/1.5 var(--font-family-open);
+
+  /* Input */
+  --input-base: #1C1F21;
+  --input-placeholder: #869198;
+  --body-sm: 600 0.875rem/1.5 var(--font-family-open);
+
+  /* Text */
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  /* Button Colors */
+  --content-primary: #FFFFFF;
+  --background-tertiary: #24222E;
+
+  /* Button Fonts */
+  --ff-rf: 'Roboto Flex', sans-serif, system-ui;
+  --label-medium: 700 1.25rem/150% var(--ff-rf);
+}

@@ -1,0 +1,20 @@
+div {
+  margin: auto;
+
+  & h1 {
+   font-size: 3rem;
+   margin-bottom: 1rem; 
+   color: var(--text-heading);
+   font: var(--body-title);
+  }
+
+  & div.inputs {
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
